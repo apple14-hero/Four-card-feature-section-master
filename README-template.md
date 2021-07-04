@@ -21,8 +21,8 @@ OUTPUT OF CHALLENGE IN THE GIVEN LOCATION : four-card-feature-section-master\fou
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/apple14-hero/Four-card-feature-section-master.git
+- Live Site URL: https://apple14-hero.github.io/Four-card-feature-section-master/
 
 ## My process
 Firstly i had started the desktop design by creating the top section i.e, heading part after that i had created the four component by using HTML and style them by using CSS. and finally i had created mobile design by using media query.

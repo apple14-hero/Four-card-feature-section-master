@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    /* DESKTOP VIEW  */
+
+    .container {
+      margin-top: 1rem;
+    }
+
+    .heading-container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .heading-container .top-heading {
+      width: 80%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .heading-container .top-heading span,
+    h2 {
+      font-size: 30px;
+      font-weight: 200;
+    }
+
+    .heading-container .top-heading h2 {
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .heading-container .top-heading p {
+      font-size: 12px;
+      font-weight: 200;
+      margin-top: 0;
+      width: 80%;
+      transform: translate(10%, 10%);
+    }
+
+    /* supervisor card */
+    .container .child1 {
+      width: 340px;
+      height: 220px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+      line-height: 1.5;
+      background-color: hsl(0, 0%, 98%);
+      /* border-radius: 10px; */
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transform: translate(-60%, 70%);
+
+    }
+
+    .container .child1 h3 {
+      width: 60%;
+      transform: translateX(10%);
+      margin-bottom: 2px;
+    }
+
+    .container .child1 p {
+      transform: translateX(10%);
+      width: 60%;
+      margin-top: 0;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .container .child1 .color {
+      height: 0.2rem;
+      background-color: hsl(180, 62%, 55%);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+    }
+
+    .container .child1 .img1 {
+      transform: translate(70%, 38%);
+    }
+
+
+    /* Team-builder card */
+    .container .child2 {
+      width: 340px;
+      height: 220px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+      line-height: 1.5;
+      background-color: hsl(0, 0%, 98%);
+      /* border-radius: 10px; */
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transform: translate(48%, -80%);
+
+
+    }
+
+    .container .child2 h3 {
+      width: 60%;
+      transform: translateX(10%);
+      margin-bottom: 2px;
+    }
+
+    .container .child2 p {
+      transform: translateX(10%);
+      width: 60%;
+      margin-top: 0;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .container .child2 .color {
+      height: 0.2rem;
+      background-color: hsl(0, 78%, 62%);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+    }
+
+    .container .child2 .img2 {
+      transform: translate(70%, 38%);
+    }
+
+
+    /* Karma card */
+    .container .child3 {
+      width: 340px;
+      height: 220px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+      line-height: 1.5;
+      background-color: hsl(0, 0%, 98%);
+      /* border-radius: 10px; */
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transform: translate(48%, -70%);
+
+
+    }
+
+    .container .child3 h3 {
+      width: 60%;
+      transform: translateX(10%);
+      margin-bottom: 2px;
+    }
+
+    .container .child3 p {
+      transform: translateX(10%);
+      width: 60%;
+      margin-top: 0;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .container .child3 .color {
+      height: 0.2rem;
+      background-color: hsl(34, 97%, 64%);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+    }
+
+    .container .child3 .img3 {
+      transform: translate(70%, 38%);
+    }
+
+    /* calculator card */
+
+    .container .child4 {
+      width: 340px;
+      height: 220px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+      line-height: 1.5;
+      background-color: hsl(0, 0%, 98%);
+      /* border-radius: 10px; */
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transform: translate(160%, -229%);
+
+    }
+
+    .container .child4 h3 {
+      width: 60%;
+      transform: translateX(10%);
+      margin-bottom: 2px;
+    }
+
+    .container .child4 p {
+      transform: translateX(10%);
+      width: 60%;
+      margin-top: 0;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .container .child4 .color {
+      height: 0.2rem;
+      background-color: hsl(212, 86%, 64%);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+    }
+
+    .container .child4 .img4 {
+      transform: translate(140%, 38%);
+      display: block;
+      width: 50%;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* media query  for mobile VIEW */
+
+    @media screen and (min-width: 375px) and (max-width: 715px){
+
+      .container .heading-container .top-heading span {
+        font-size: larger;
+      }
+
+      .container .heading-container .top-heading h2 {
+        font-size: larger;
+      }
+      .container .childs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .container .heading-container .top-heading p {
+        line-height: 1.6;
+        text-align-last: auto;
+      }
+
+      .container .child1 {
+      transform: translate(0%,14%);
+      }
+      .container .childs .child1 .img1 img {
+
+      }
+
+      .container .child2 {
+        transform: translate(0px, 48px);
+      }
+
+      .container .child3 {
+        transform: translate(0px, 66px);
+      }
+
+      .container .child4 {
+        transform: translate(0px, 83px);
+      }
+
+      footer {
+        position: relative;
+        top: 100px;
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading-container">
+      <div class="top-heading">
+        <span>Reliable, efficient delivery</span>
+        <h2>Powered by Technology</h2>
+        <p>Our Artificial Intelligence powered tools use millions of project data points
+          to ensure that your project is successful</p>
+      </div>
+    </div>
+
+    <div class="childs">
+      <div class="child1">
+        <div class="color"></div>
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <div class="img1">
+          <img src="images/icon-supervisor.svg" alt="supervisor_image">
+        </div>
+      </div>
+
+      <div class="child2">
+        <div class="color"></div>
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <div class="img2">
+          <img src="images/icon-team-builder.svg" alt="team-bulider_image">
+        </div>
+      </div>
+
+      <div class="child3">
+        <div class="color"></div>
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <div class="img3">
+          <img src="images/icon-karma.svg" alt="karma_image">
+        </div>
+      </div>
+
+      <div class="child4">
+        <div class="color"></div>
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <div class="img4">
+          <img src="images/icon-calculator.svg" alt="calculator_image">
+        </div>
+      </div>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Atul Pal</a>.
+        </p>
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
